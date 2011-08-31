@@ -1,0 +1,66 @@
+<plugin name='resources' version='1.0.2' grailsVersion='1.2 &gt; *'>
+  <author>Marc Palmer, Luke Daley</author>
+  <authorEmail>marc@grailsrocks.com, ld@ldaley.com</authorEmail>
+  <title>Resources</title>
+  <description>HTML resource management enhancements to replace g.resource etc.</description>
+  <documentation>http://grails.org/plugin/resources</documentation>
+  <resources>
+    <resource>BlueprintResources</resource>
+    <resource>BuildConfig</resource>
+    <resource>Config</resource>
+    <resource>DataSource</resource>
+    <resource>JQueryResources</resource>
+    <resource>OverrideResources</resource>
+    <resource>ResourcesBootStrap</resource>
+    <resource>TestOnlyResources</resource>
+    <resource>UrlMappings</resource>
+    <resource>FeedsController</resource>
+    <resource>org.grails.plugin.resource.BundleResourceMapper</resource>
+    <resource>org.grails.plugin.resource.CSSPreprocessorResourceMapper</resource>
+    <resource>org.grails.plugin.resource.CSSRewriterResourceMapper</resource>
+    <resource>org.grails.plugin.resource.test.TestResourceMapper</resource>
+    <resource>org.grails.plugin.resource.ResourceService</resource>
+    <resource>org.grails.plugin.resource.ResourceTagLib</resource>
+  </resources>
+  <dependencies>
+    <plugin name='logging' version='1.0 &gt; *' />
+  </dependencies>
+  <behavior>
+    <method name='getProperty' artefact='Resources' type='BlueprintResources'>
+      <description />
+      <argument type='java.lang.String' />
+    </method>
+    <method name='invokeMethod' artefact='Resources' type='BlueprintResources'>
+      <description />
+      <argument type='java.lang.String' />
+      <argument type='java.lang.Object' />
+    </method>
+    <method name='getProperty' artefact='Resources' type='JQueryResources'>
+      <description />
+      <argument type='java.lang.String' />
+    </method>
+    <method name='invokeMethod' artefact='Resources' type='JQueryResources'>
+      <description />
+      <argument type='java.lang.String' />
+      <argument type='java.lang.Object' />
+    </method>
+    <method name='getProperty' artefact='Resources' type='OverrideResources'>
+      <description />
+      <argument type='java.lang.String' />
+    </method>
+    <method name='invokeMethod' artefact='Resources' type='OverrideResources'>
+      <description />
+      <argument type='java.lang.String' />
+      <argument type='java.lang.Object' />
+    </method>
+    <method name='getProperty' artefact='Resources' type='TestOnlyResources'>
+      <description />
+      <argument type='java.lang.String' />
+    </method>
+    <method name='invokeMethod' artefact='Resources' type='TestOnlyResources'>
+      <description />
+      <argument type='java.lang.String' />
+      <argument type='java.lang.Object' />
+    </method>
+  </behavior>
+</plugin>
